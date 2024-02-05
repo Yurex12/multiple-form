@@ -15,7 +15,6 @@ export function useMultipleForm(steps: ReactElement[]) {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
   function next() {
-    console.log(steps[currentStepIndex]);
     if (currentStepIndex >= steps.length - 1) return;
     setCurrentStepIndex((cur) => cur + 1);
   }
